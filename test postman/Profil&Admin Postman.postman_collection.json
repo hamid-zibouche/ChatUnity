@@ -1,0 +1,165 @@
+{
+	"info": {
+		"_postman_id": "c4d5e4fb-222d-4319-93d2-1b4a30c0bf2b",
+		"name": "Profil&Admin Postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "30635480"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/users/profil",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjkyMjMzNzIwMzY4NTQ3NzU4MDciLCJub20iOiJyaGJhbGkiLCJwcmVub20iOiJpc3NhIiwiZW1haWwiOiJyaGJhbGkuaXNzYUBnbWFpbC5jb20iLCJpYXQiOjE3MDI1NTg1OTl9.ArlhQC-ODFZZfiIykQoBGIyKAzrtI1rZ8JEvULtqLlA",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "localhost:3000/users/profil"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nom",
+							"value": "rhbali",
+							"type": "default"
+						},
+						{
+							"key": "prenom",
+							"value": "issa",
+							"type": "default"
+						},
+						{
+							"key": "pseudo",
+							"value": "saii",
+							"type": "default"
+						},
+						{
+							"key": "email",
+							"value": "rhbali.issa@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "mdp",
+							"value": "12345678",
+							"type": "default"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": "localhost:3000/register"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/users/profil",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjkyMjMzNzIwMzY4NTQ3NzU4MDciLCJub20iOiJyaGJhbGkiLCJwcmVub20iOiJpc3NhIiwiZW1haWwiOiJyaGJhbGkuaXNzYUBnbWFpbC5jb20iLCJpYXQiOjE3MDI1NTg1OTl9.ArlhQC-ODFZZfiIykQoBGIyKAzrtI1rZ8JEvULtqLlA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nom",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "prenom",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "localhost:3000/users/profil"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/users/bannir",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjkyMjMzNzIwMzY4NTQ3NzU4MDciLCJub20iOiJmZmZmZiIsInByZW5ub20iOiJpc3NhIiwidXNlcm5hbWUiOiJyaGJhbGkuaXNzYUBnbWFpbC5jb20iLCJpYXQiOjE3MDI1NzI2NTN9.VyyHc6gNr5Qd4tjnfKKftD_fxTCC1Nj92qtrY22y3TM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "Raison",
+							"value": "insulte",
+							"type": "text"
+						}
+					]
+				},
+				"url": "localhost:3000/users/bannir"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/users/debannir",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjkyMjMzNzIwMzY4NTQ3NzU4MDciLCJub20iOiJmZmZmZiIsInByZW5ub20iOiJpc3NhIiwidXNlcm5hbWUiOiJyaGJhbGkuaXNzYUBnbWFpbC5jb20iLCJpYXQiOjE3MDI1NzI2NTN9.VyyHc6gNr5Qd4tjnfKKftD_fxTCC1Nj92qtrY22y3TM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": "localhost:3000/users/debannir"
+			},
+			"response": []
+		}
+	]
+}

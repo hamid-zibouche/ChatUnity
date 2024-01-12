@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "5f115117-d17f-4702-a61e-bd2aefdd35ac",
+		"name": "Messages serveur",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "31759533"
+	},
+	"item": [
+		{
+			"name": "récuperer les messages canal",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzI5NDk5NjA2MDc5ODI1Miwibm9tIjoiWmlib3VjaGUiLCJwcmVubm9tIjoiTWFzc2luaXNzYSIsInVzZXJuYW1lIjoiemlib3VjaGVtYXNzaW5pc3NhMjAwM0BnbWFpbC5jb20iLCJpYXQiOjE3MDI0ODY0MDJ9.9Ly037opdo1N-bpALzkWKM7RX-CnhmPQGs6CerMqWaE",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:3000/serveur/2/chanel/9"
+			},
+			"response": []
+		},
+		{
+			"name": "creer un message",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzI5NDk5NjA2MDc5ODI1Miwibm9tIjoiWmlib3VjaGUiLCJwcmVubm9tIjoiTWFzc2luaXNzYSIsInVzZXJuYW1lIjoiemlib3VjaGVtYXNzaW5pc3NhMjAwM0BnbWFpbC5jb20iLCJpYXQiOjE3MDI0ODY0MDJ9.9Ly037opdo1N-bpALzkWKM7RX-CnhmPQGs6CerMqWaE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "userId",
+							"value": "3294996060798243",
+							"type": "text"
+						},
+						{
+							"key": "contenu",
+							"value": "pooliiii",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:3000/serveur/2/chanel/9"
+			},
+			"response": []
+		}
+	]
+}

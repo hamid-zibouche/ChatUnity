@@ -1,0 +1,29 @@
+<!-- login.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connexion</title>
+</head>
+<body>
+  <h1>Page de Connexion</h1>
+
+  <!-- Formulaire de connexion local -->
+  <form action="/login" method="post">
+    <label for="username">Nom d'utilisateur :</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Mot de passe :</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="submit">Connexion</button>
+  </form>
+
+  <!-- Lien pour la connexion avec Facebook -->
+  <a href="/login/facebook">Se connecter avec Facebook</a>
+  <br>
+  <a href="/login/google">Se connecter avec Google</a>
+</body>
+</html>

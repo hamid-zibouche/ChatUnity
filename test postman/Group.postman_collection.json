@@ -1,0 +1,554 @@
+{
+	"info": {
+		"_postman_id": "0918391d-a3f4-4fc4-b9d6-b5300a5d2d83",
+		"name": "Group",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "30635480"
+	},
+	"item": [
+		{
+			"name": "Delete Group",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzI5NDk5NjA2MDc5ODI0NCwibm9tIjoiU0lESUJFIiwicHJlbm9tIjoiSU5aQSIsImVtYWlsIjoiaW56YXNpZGliZTIzQGdtYWlsLmNvbSIsImlhdCI6MTcwMjQwNjE2Nn0.O_WRhBgUrwBaUbENBA25orHXx-xrKDbfiD18Z49OfVs",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzI5NDk5NjA2MDc5ODI0NSwibm9tIjoiWmlib3VjaGUiLCJwcmVub20iOiJIYW1pZCIsImVtYWlsIjoiaGFtaWR6aWJvdWNoZTFAZ21haWwuY29tIiwiaWF0IjoxNzAyNDE2Mjc3fQ.JEi1XBvsWZ1a2zROvuY_NbqbaaCMjVB0pv4NjjZrOp4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "http://localhost:3000/Group/delete/134"
+			},
+			"response": []
+		},
+		{
+			"name": "create group",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzI5NDk5NjA2MDc5ODI2Mywibm9tIjoiaW56YSIsInByZW5ub20iOiJzaWRlYmUiLCJ1c2VybmFtZSI6ImluemFzaWRlYmVAZ21haWwuY29tIiwiaWF0IjoxNzAyNDI2NDQ3fQ.uKbAxtcTXQaQFmAoh9hL4I8jjNVQ_2PsF62Zkj8qDcU",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzI5NDk5NjA2MDc5ODI4OCwibm9tIjoic2lkZWJlIiwicHJlbm9tIjoiaW56YSIsInVzZXJuYW1lIjoiaW56YV9zYmQiLCJlbWFpbCI6ImluemFzaWRpYmUyM0BnbWFpbC5jb20iLCJpYXQiOjE3MDQ4ODM5MzF9.rdXn4bt8SmzBcHNibv9Do-A7TpUPwm_vcDkQToMVzgseyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzI5NDk5NjA2MDc5ODI4Nywibm9tIjoiWklCT1VDSEUiLCJwcmVub20iOiJIYW1pZCIsInVzZXJuYW1lIjoiaGFtaWRfemNoMSIsImVtYWlsIjoiaGFtaWR6aWJvdWNoZTFAZ21haWwuY29tIiwiaWF0IjoxNzA0ODQyNTY5fQ.6qk_3mtpwEbkJPU5baia1xqmiCQmHPzdPzs491LoHzA ",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzI5NDk5NjA2MDc5ODI4OCwibm9tIjoic2lkZWJlIiwicHJlbm9tIjoiaW56YSIsInVzZXJuYW1lIjoiaW56YV9zYmQiLCJlbWFpbCI6ImluemFzaWRpYmUyM0BnbWFpbC5jb20iLCJpYXQiOjE3MDQ4ODM5MzF9.rdXn4bt8SmzBcHNibv9Do-A7TpUPwm_vcDkQToMVzgs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nom",
+							"value": "L1",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/Group/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Group",
+						"create"
+					],
+					"query": [
+						{
+							"key": "nom",
+							"value": "L3INFO",
+							"disabled": true
+						},
+						{
+							"key": "image",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "send message grp",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzI5NDk5NjA2MDc5ODI2Mywibm9tIjoiaW56YSIsInByZW5ub20iOiJzaWRlYmUiLCJ1c2VybmFtZSI6ImluemFzaWRlYmVAZ21haWwuY29tIiwiaWF0IjoxNzAyNDI2NDQ3fQ.uKbAxtcTXQaQFmAoh9hL4I8jjNVQ_2PsF62Zkj8qDcU",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzI5NDk5NjA2MDc5ODI4Nywibm9tIjoiWklCT1VDSEUiLCJwcmVub20iOiJIYW1pZCIsInVzZXJuYW1lIjoiaGFtaWRfemNoMSIsImVtYWlsIjoiaGFtaWR6aWJvdWNoZTFAZ21haWwuY29tIiwiaWF0IjoxNzA0ODQyNTY5fQ.6qk_3mtpwEbkJPU5baia1xqmiCQmHPzdPzs491LoHzA ",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "contenu",
+							"value": "salut les gars",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": [],
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/send/messagesGrp/15",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"send",
+						"messagesGrp",
+						"15"
+					],
+					"query": [
+						{
+							"key": "nom",
+							"value": "L3INFO",
+							"disabled": true
+						},
+						{
+							"key": "image",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get message grp",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzI5NDk5NjA2MDc5ODI2Mywibm9tIjoiaW56YSIsInByZW5ub20iOiJzaWRlYmUiLCJ1c2VybmFtZSI6ImluemFzaWRlYmVAZ21haWwuY29tIiwiaWF0IjoxNzAyNDI2NDQ3fQ.uKbAxtcTXQaQFmAoh9hL4I8jjNVQ_2PsF62Zkj8qDcU",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzI5NDk5NjA2MDc5ODI4Nywibm9tIjoiWklCT1VDSEUiLCJwcmVub20iOiJIYW1pZCIsInVzZXJuYW1lIjoiaGFtaWRfemNoMSIsImVtYWlsIjoiaGFtaWR6aWJvdWNoZTFAZ21haWwuY29tIiwiaWF0IjoxNzA0ODQyNTY5fQ.6qk_3mtpwEbkJPU5baia1xqmiCQmHPzdPzs491LoHzA ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "contenu",
+							"value": "salut les gars",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": [],
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/messagesGrp/15",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"messagesGrp",
+						"15"
+					],
+					"query": [
+						{
+							"key": "nom",
+							"value": "L3INFO",
+							"disabled": true
+						},
+						{
+							"key": "image",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update image.Group",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzI5NDk5NjA2MDc5ODI0NCwibm9tIjoiU0lESUJFIiwicHJlbm9tIjoiSU5aQSIsImVtYWlsIjoiaW56YXNpZGliZTIzQGdtYWlsLmNvbSIsImlhdCI6MTcwMjQwNjE2Nn0.O_WRhBgUrwBaUbENBA25orHXx-xrKDbfiD18Z49OfVs",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzI5NDk5NjA2MDc5ODI0NSwibm9tIjoiWmlib3VjaGUiLCJwcmVub20iOiJIYW1pZCIsImVtYWlsIjoiaGFtaWR6aWJvdWNoZTFAZ21haWwuY29tIiwiaWF0IjoxNzAyNDE2Mjc3fQ.JEi1XBvsWZ1a2zROvuY_NbqbaaCMjVB0pv4NjjZrOp4",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nom",
+							"value": "INFO_PWS",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/inzas/OneDrive/Images/image_chat.png",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/Group/update/image/126",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Group",
+						"update",
+						"image",
+						"126"
+					],
+					"query": [
+						{
+							"key": "nom ",
+							"value": "L3INFO",
+							"disabled": true
+						},
+						{
+							"key": "image",
+							"value": "BLOB -9o",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update nom.Group",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzI5NDk5NjA2MDc5ODI0NCwibm9tIjoiU0lESUJFIiwicHJlbm9tIjoiSU5aQSIsImVtYWlsIjoiaW56YXNpZGliZTIzQGdtYWlsLmNvbSIsImlhdCI6MTcwMjQwNjE2Nn0.O_WRhBgUrwBaUbENBA25orHXx-xrKDbfiD18Z49OfVs",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzI5NDk5NjA2MDc5ODI0NSwibm9tIjoiWmlib3VjaGUiLCJwcmVub20iOiJIYW1pZCIsImVtYWlsIjoiaGFtaWR6aWJvdWNoZTFAZ21haWwuY29tIiwiaWF0IjoxNzAyNDE2Mjc3fQ.JEi1XBvsWZ1a2zROvuY_NbqbaaCMjVB0pv4NjjZrOp4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nom",
+							"value": "TPE",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/inzas/OneDrive/Images/image_chat.png",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/Group/update/nom/133",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Group",
+						"update",
+						"nom",
+						"133"
+					],
+					"query": [
+						{
+							"key": "nom ",
+							"value": "L3INFO",
+							"disabled": true
+						},
+						{
+							"key": "image",
+							"value": "BLOB -9o",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read group",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzI5NDk5NjA2MDc5ODI2Mywibm9tIjoiaW56YSIsInByZW5ub20iOiJzaWRlYmUiLCJ1c2VybmFtZSI6ImluemFzaWRlYmVAZ21haWwuY29tIiwiaWF0IjoxNzAyNDI2NDQ3fQ.uKbAxtcTXQaQFmAoh9hL4I8jjNVQ_2PsF62Zkj8qDcU",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzI5NDk5NjA2MDc5ODI4Nywibm9tIjoiWklCT1VDSEUiLCJwcmVub20iOiJIYW1pZCIsInVzZXJuYW1lIjoiaGFtaWRfemNoMSIsImVtYWlsIjoiaGFtaWR6aWJvdWNoZTFAZ21haWwuY29tIiwiaWF0IjoxNzA0ODQyNTY5fQ.6qk_3mtpwEbkJPU5baia1xqmiCQmHPzdPzs491LoHzA ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "http://localhost:3000/Groupe/mesGroupes"
+			},
+			"response": []
+		},
+		{
+			"name": "AjoutMembre group",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzI5NDk5NjA2MDc5ODI2Mywibm9tIjoiaW56YSIsInByZW5ub20iOiJzaWRlYmUiLCJ1c2VybmFtZSI6ImluemFzaWRlYmVAZ21haWwuY29tIiwiaWF0IjoxNzAyNDI2NDQ3fQ.uKbAxtcTXQaQFmAoh9hL4I8jjNVQ_2PsF62Zkj8qDcU",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzI5NDk5NjA2MDc5ODI4Nywibm9tIjoiWklCT1VDSEUiLCJwcmVub20iOiJIYW1pZCIsInVzZXJuYW1lIjoiaGFtaWRfemNoMSIsImVtYWlsIjoiaGFtaWR6aWJvdWNoZTFAZ21haWwuY29tIiwiaWF0IjoxNzA0ODQyNTY5fQ.6qk_3mtpwEbkJPU5baia1xqmiCQmHPzdPzs491LoHzA ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "idgroupe",
+							"value": "15",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "idUser",
+							"value": "3294996060798289",
+							"type": "text"
+						},
+						{
+							"key": "idUser",
+							"value": "329499606079824",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/Group/15/addMember",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Group",
+						"15",
+						"addMember"
+					],
+					"query": [
+						{
+							"key": "iduser",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "contenu",
+							"value": "hello",
+							"disabled": true
+						},
+						{
+							"key": "image",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AfficheMembre group",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "idgroupe",
+							"value": "125",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "idAdmin",
+							"value": "3294996060798244",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "idUser",
+							"value": "\t\n3294996060798244",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "125",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:3000/Group/8/members"
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteMembre group",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzI5NDk5NjA2MDc5ODI0NCwibm9tIjoiU0lESUJFIiwicHJlbm9tIjoiSU5aQSIsImVtYWlsIjoiaW56YXNpZGliZTIzQGdtYWlsLmNvbSIsImlhdCI6MTcwMjQwNjE2Nn0.O_WRhBgUrwBaUbENBA25orHXx-xrKDbfiD18Z49OfVs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "idUser",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "idAdmin ",
+							"value": "3294996060798244",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/Group/125/removeMember/:1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Group",
+						"125",
+						"removeMember",
+						":1"
+					],
+					"variable": [
+						{
+							"key": "1",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "roupId",
+			"value": "124"
+		}
+	]
+}
