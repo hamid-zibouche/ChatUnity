@@ -23,5 +23,5 @@ Cette application permet aux utilisateurs de se connecter et de communiquer en t
 1. Clonez le dépôt GitHub :
 
 ```bash
-git clone https://github.com/votre_nom/chat-en-ligne.git
+git clone https://github.com/hamid-zibouche/ChatUnity.git
 
